@@ -1,0 +1,112 @@
+#club {
+    margin-top: 20px;
+}
+
+#club h2.club-title {
+    font-size: 20px;
+    background-color: #EEE;
+    padding: 8px 20px;
+    color: #000;
+    margin: 0;
+    cursor: pointer;
+    font-weight: 200;
+    text-transform: uppercase;
+    border-bottom: 1px solid #CCC;
+    outline: 0;
+}
+
+span.plusClub,
+span.minusClub {
+    height: 24px;
+    width: 24px;
+    display: inline-table;
+    margin-right: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    vertical-align: top;
+    opacity: 0.7;
+}
+
+span.plusClub {
+    background-image: url('../images/plus.png');
+}
+
+span.minusClub {
+    background-image: url('../images/minus.png');
+}
+
+.club-partners {
+    padding: 20px;
+    background-color: #FCFCFC;
+}
+
+.club-partner {
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+    border-bottom: 1px dashed #DDD;
+}
+
+.club-partners .club-partner:last-child {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.club-logo {
+    width: 150px;
+    height: 150px;
+    float: right;
+    display: table;
+    margin: 0 0 10px 20px;
+    text-align: center;
+}
+
+#club .club-logo img {
+    max-height: 150px;
+    max-width: 100%;
+}
+
+#club h3 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#club small {
+    font-weight: 300;
+    font-size: 18px;
+}
+
+#club p {
+    font-weight: 300;
+    font-size: 16px;
+}
+
+#club p.address-club {
+    font-weight: 300;
+    font-size: 14px;
+}
+
+#club a {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+#club a i {
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+    .club-logo {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .club-logo {
+        width: 80px;
+        height: 80px;
+    }
+}

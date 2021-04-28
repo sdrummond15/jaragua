@@ -1,0 +1,280 @@
+.doings {
+    width: 100%;
+    margin: 0 auto 60px auto;
+    display: table;
+}
+
+.doings h2 {
+    font-weight: bold;
+    border-bottom: 1px solid #383838;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+#list-doings {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.doing {
+    width: 25%;
+    margin-bottom: 30px;
+}
+
+.doing-img {
+    width: calc(100% - 10px);
+    margin: 0 5px;
+    display: table;
+    vertical-align: top;
+}
+
+.doing-img a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow: hidden;
+}
+
+.doing-img a span {
+    width: 100%;
+    height: 100%;
+    display: table;
+    background-size: cover;
+    background-position: center;
+    transition: all 500ms;
+}
+
+.doing-img a:hover span {
+    transform: scale(1.1);
+}
+
+.doing-desc {
+    width: calc(100% - 10px);
+    margin: 0 5px;
+    display: table;
+    vertical-align: top;
+    background-color: #DEDEDE;
+    position: relative;
+}
+
+.doing-desc .doing-data {
+    width: 80px;
+    display: table-cell;
+    vertical-align: top;
+    background-color: #383838;
+    position: relative;
+}
+
+.doing-desc .doing-data h3 {
+    padding: 8px 5px 5px 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24px;
+    margin: 0;
+    color: #FFF;
+    line-height: 1;
+}
+
+.doing-desc .doing-data h3 span {
+    font-size: 18px;
+}
+
+.doing-desc .doing-data h4 {
+    text-align: center;
+    font-size: 42px;
+    margin: 0;
+    color: #FFF;
+    background-color: #666;
+}
+
+.doing-desc .doing-locale {
+    padding: 5px 10px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.doing-desc .doing-locale h1 {
+    margin-bottom: 8px;
+    line-height: 1;
+    text-align: center;
+}
+
+.doing-desc .doing-locale h1 a {
+    font-size: 20px;
+    margin: 0;
+    color: #383838;
+    text-decoration: none;
+}
+
+.doing-desc .doing-locale p {
+    margin: 3px 0;
+    line-height: 1.2;
+    text-align: center;
+    font-size: 14px;
+}
+
+.doing-desc .doing-locale p a {
+    font-size: 14px;
+    color: #FFF;
+}
+
+.doing-desc .doing-locale p small {
+    display: block;
+    font-style: italic;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+#box-filter {
+    display: table;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+#box-filter h4 {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.15em;
+    margin-bottom: 12px;
+}
+
+#filter {
+    float: right;
+    display: table;
+}
+
+#filter label {
+    margin-right: 10px;
+}
+
+#filter select {
+    border: 0;
+    color: #383838;
+    font-size: 16px;
+    font-family: 'Libre Franklin', Helvetica, Arial;
+    background-color: #EEE;
+    padding: 5px 10px;
+}
+
+/*******EVENTO*******/
+
+.evento {
+    width: 100%;
+}
+
+.evento-img {
+    width: 25%;
+    min-width: 240px;
+    display: table;
+    float: right;
+    margin: 0 0 10px 20px;
+    border: 1px solid #383838;
+}
+
+.evento-img figure {
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow: hidden;
+}
+
+.evento-img figure span {
+    width: 100%;
+    height: 100%;
+    display: table;
+    background-size: cover;
+    background-position: center;
+    transition: all 500ms;
+}
+
+.evento-img figure:hover span {
+    transform: scale(1.1);
+}
+
+.evento h1 {
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    font-size: 26px;
+    color: #383838;
+    border-bottom: 1px solid #383838;
+    text-transform: uppercase;
+}
+
+.evento h2 {
+    font-size: 20px;
+    color: #CCC;
+    text-transform: uppercase;
+    margin-left: 2px;
+}
+
+.evento h2 span {
+    text-transform: none;
+}
+
+.evento h3 {
+    font-size: 18px;
+    color: #bbb;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1200px) {
+    .doing {
+        width: 33.33%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .doings{
+        margin-bottom: 0;
+    }
+    .doing-desc .doing-data {
+        width: 60px;
+    }
+
+    .doing-desc .doing-data h4 {
+        font-size: 36px;
+    }
+
+    .doing-desc .doing-data h3 {
+        font-size: 20px;
+    }
+
+    .doing-desc .doing-data h3 span {
+        font-size: 16px;
+    }
+
+    .doing-desc .doing-locale h1 a {
+        font-size: 16px;
+    }
+
+    .doing-desc .doing-locale p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .doing {
+        width: 50%;
+    }
+    .evento-img {
+        width: 100%;
+        float: none;
+        margin: 0 auto 15px auto;
+        max-width: 300px;
+        border: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .doing {
+        width: 100%;
+        max-width: 360px;
+        margin-bottom: 15px;
+    }
+
+    #list-doings {
+        display: table;
+        margin: auto;
+    }
+}

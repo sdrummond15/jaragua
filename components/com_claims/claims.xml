@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5" method="upgrade">
+	<name>com_claims</name>
+	<author>Wanderson</author>
+	<creationDate>Fevereiro 2018</creationDate>
+	<copyright>Todos os Direitos Reservados a SDrummond</copyright>
+	<authorEmail>wandersonmg18@gmail.com</authorEmail>
+	<version>1.0</version>
+	<description>COM_CLAIMS_XML_DESCRIPTION</description>
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+	<files folder="site">
+	  	<filename>controller.php</filename>
+	  	<filename>claims.php</filename>
+	  	<filename>index.html</filename>
+	  	<filename>views/index.html</filename>
+	  	<filename>views/claims/index.html</filename>
+	  	<filename>views/claims/view.html.php</filename>
+	  	<filename>views/claims/tmpl/default.php</filename>
+	  	<filename>views/claims/tmpl/index.html</filename>
+ 	</files>
+	<languages folder="site">
+		<language tag="pt-BR">language/pt-BR.com_claims.ini</language>
+	</languages>
+	<administration>
+		<menu img="class:claims">com_claims</menu>
+		<submenu>
+			<menu link="option=com_claims" view="claims" img="class:claims" alt="Fornecedors/Fornecedors">com_claims</menu>
+			<menu link="option=com_categories&amp;extension=com_claims" view="categories" img="class:claims-cat" alt="Fornecedors/Categories">com_claims_categories</menu>
+		</submenu>
+		<files folder="admin">
+			<folder>controllers</folder>
+			<folder>helpers</folder>
+			<folder>models</folder>
+			<folder>language</folder>
+			<folder>sql</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+			<filename>claims.php</filename>
+			<filename>access.xml</filename>
+			<filename>config.xml</filename>
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+		</files>
+		<languages folder="admin">
+			<language tag="pt-BR">language/pt-BR.com_claims.ini</language>
+			<language tag="pt-BR">language/pt-BR.com_claims.sys.ini</language>
+		</languages>
+	</administration>
+</extension>
