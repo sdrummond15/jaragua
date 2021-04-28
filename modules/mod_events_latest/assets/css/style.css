@@ -1,0 +1,100 @@
+#latest-list {
+    width: 100%;
+}
+
+#latest-list h1 {
+    margin-bottom: 30px;
+}
+
+#latest-list h1 a {
+    text-decoration: none;
+    font-weight: 200;
+    font-size: 30px;
+    color: #FFF;
+    text-transform: uppercase;
+}
+
+#all-latest .latest {
+    display: table;
+    width: 100%;
+    border-top: 1px solid #FFF;
+    padding: 10px 0;
+}
+
+div#jemmoduleteaser .eventbox {
+    width: 100%;
+    display: table;
+    border-top: 1px solid #FFF;
+    padding: 10px 0;
+}
+
+#all-latest .latest .data {
+    background-repeat: no-repeat;
+    width: 80px;
+    text-align: center;
+    float: left;
+    margin: 0 20px 10px 0;
+}
+
+#all-latest .latest a {
+    text-decoration: none;
+}
+
+#all-latest .latest .data a span:first-child {
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 26px;
+    background-color: #213f25;
+    border-radius: 8px 8px 0 0;
+    color: #FFF;
+    display: table;
+    width: 100%;
+}
+
+#all-latest .latest .data a span {
+    font-weight: 100;
+    font-size: 45px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 0 0 8px 8px;
+    background-color: #FFF;
+    color: #213f25;
+    display: table;
+    width: 100%;
+}
+
+#all-latest .latest h2 a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    color: #FFF;
+}
+
+#all-latest .latest p{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 12px;
+    color: #FFF;
+}
+.btn.btn-all-events {
+    display: table;
+    background-color: #1e4323;
+    text-decoration: none;
+    font-style: italic;
+    float: right;
+}
+
+@media screen and (max-width: 1024px) {
+    #all-latest .latest .data {
+        width: 60px;
+    }
+    #all-latest .latest .data a span:first-child{
+        font-size: 14px;
+    }
+    #all-latest .latest .data a span{
+        font-size: 36px;
+        line-height: 48px;
+    }
+}
