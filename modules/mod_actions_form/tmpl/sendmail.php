@@ -59,7 +59,7 @@ try {
     $body .= '<b>Palavra:</b>' . $palavra . '</p>';
     $body .= '<b>Termo:</b>' . $termo . '</p>';
     if (!empty($anexo['name'])) {
-        $body .= '<p>Anexo:</p>' . JPATH_BASE . DS . 'images' . DS . 'acao' .DS . $time . $anexo['name'];
+        $body .= '<p>Anexo:</p>';
         $body .= '<img src="' . JPATH_BASE . DS . 'images' . DS . 'acao' .DS . $time . $anexo['name'] . '" />';
     }
 
