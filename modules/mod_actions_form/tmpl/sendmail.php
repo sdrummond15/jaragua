@@ -53,14 +53,12 @@ try {
     }
     /* CORPO DO E-MAIL */
     $body = '<h3>Dados Cadastrados</h3>';
-    $body .= '<p><b>Nome:</b>' . $nome . '<br>';
-    $body .= '<b>Cota:</b>' . $cota . '<br>';
-    $body .= '<b>Frase:</b>' . $frase . '<br>';
-    $body .= '<b>Palavra:</b>' . $palavra . '</p>';
-    $body .= '<b>Termo:</b>' . $termo . '</p>';
+    $body .= '<p><b>Nome: </b>' . $nome . '<br>';
+    $body .= '<b>Cota: </b>' . $cota . '<br>';
+    $body .= '<b>Frase: </b>' . $frase . '<br>';
+    $body .= '<b>Palavra: </b>' . $palavra . '</p>';
     if (!empty($anexo['name'])) {
-        $body .= '<p>Anexo:</p>';
-        $body .= '<img src="' . JPATH_BASE . DS . 'images' . DS . 'acao' .DS . $time . $anexo['name'] . '" />';
+        $body .= '<p><b>Imagem em anexo!</b></p>';
     }
 
     $mail = JFactory::getMailer();
@@ -70,8 +68,10 @@ try {
     $mail->isHtml();
     $mail->setSubject($subject);
     $mail->setBody($body);
+    $mail->addAttachment($file);
     $sent = $mail->Send();
 
+    $response['send'] = $sent;
     $response['msg'] = 'Obrigado por participar!';
     $response['class'] = 'success';
 } catch (phpmailerException $e) {

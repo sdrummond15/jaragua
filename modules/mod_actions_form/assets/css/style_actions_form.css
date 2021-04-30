@@ -3,12 +3,6 @@
     display: table;
 }
 
-#actions-form .actions-form>div {
-    width: 1170px;
-    margin: auto;
-    display: table;
-}
-
 #actions-form fieldset {
     width: 100%;
     margin: 0 10px;
