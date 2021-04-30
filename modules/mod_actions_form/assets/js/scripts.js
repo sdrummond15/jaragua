@@ -117,6 +117,7 @@ jQuery(document).ready(function ($) {
       },
       complete: function () {
         $("#form-actions-form")[0].reset();
+        $("#enviar").attr('disabled', true); 
         $(".loading").fadeOut("fast");
       },
     });
