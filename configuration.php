@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 class JConfig {
 	public $offline = '0';
 	public $offline_message = 'Este site está fora do ar para manutenção.<br />Tente novamente mais tarde.';
@@ -13,7 +13,7 @@ class JConfig {
 	public $debug_lang = '0';
 	public $debug_lang_const = '1';
 	public $dbtype = 'mysqli';
-	public $host = '192.168.25.8';
+	public $host = 'localhost';
 	public $user = 'root';
 	public $password = '';
 	public $db = 'db_jaragua';
@@ -31,14 +31,14 @@ class JConfig {
 	public $ftp_enable = '0';
 	public $offset = 'America/Sao_Paulo';
 	public $mailonline = '1';
-	public $mailer = 'mail';
-	public $mailfrom = 'secretaria@jaraguaclub.com.br';
+	public $mailer = 'smtp';
+	public $mailfrom = 'wandersonmg18@gmail.com';
 	public $fromname = 'Jaraguá Club';
 	public $sendmail = '/usr/sbin/sendmail';
 	public $smtpauth = '1';
-	public $smtpuser = 'wandersonmg18@gmail.com';
-	public $smtppass = '';
-	public $smtphost = 'smtp.gmail.com';
+	public $smtpuser = 'contato@sdrummond.com.br';
+	public $smtppass = 'sd15@email';
+	public $smtphost = 'sdrummond.com.br';
 	public $smtpsecure = 'ssl';
 	public $smtpport = '465';
 	public $caching = '0';
@@ -81,8 +81,8 @@ class JConfig {
 	public $proxy_user = '';
 	public $proxy_pass = '';
 	public $massmailoff = '0';
-	public $replyto = '';
-	public $replytoname = '';
+	public $replyto = 'wandersonmg18@gmail.com';
+	public $replytoname = 'Wanderson';
 	public $MetaRights = '';
 	public $sitename_pagetitles = '0';
 	public $force_ssl = '0';

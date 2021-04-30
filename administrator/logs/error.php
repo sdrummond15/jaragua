@@ -5,3 +5,4 @@
 
 #Fields: datetime	priority clientip	category	message
 2021-04-28T14:08:39+00:00	INFO ::1	joomlafailure	Nome de usuário e/ou senha não correspondem ou você ainda não possui uma conta.
+2021-04-30T13:56:17+00:00	INFO ::1	joomlafailure	Nome de usuário e/ou senha não correspondem ou você ainda não possui uma conta.
