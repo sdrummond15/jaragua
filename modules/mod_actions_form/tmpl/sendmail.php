@@ -24,11 +24,12 @@ $palavra = $_POST['palavra'];
 $anexo = $_FILES['anexo'];
 $termo = $_POST['termo'];
 $email_admin = $_POST['email_admin'];
-
+$subject = $_POST['subject'];
 try {
+    $time = time();
 
     $uploadDir = JPATH_BASE . DS . 'images' . DS . 'acao/';
-    $file = $uploadDir . basename($anexo["name"]);
+    $file = $uploadDir . $time . basename($anexo["name"]);
     $imageFileType = strtolower(pathinfo($file, PATHINFO_EXTENSION));
     if (!move_uploaded_file($anexo["tmp_name"], $file)) {
         throw new Exception('Erro no upload da imagem!', 1);
@@ -44,8 +45,12 @@ try {
 
     $fromname = $app->get('fromname');
     $sitename = $app->get('sitename');
-    $subject = 'Ação do Dia das Mães através do site ' . $app->get('sitename');
 
+    if (!empty($subject)) {
+        $subject = $subject;
+    } else {
+        $subject = 'Ação do Dia das Mães através do site ' . $app->get('sitename');
+    }
     /* CORPO DO E-MAIL */
     $body = '<h3>Dados Cadastrados</h3>';
     $body .= '<p><b>Nome:</b>' . $nome . '<br>';
@@ -54,12 +59,13 @@ try {
     $body .= '<b>Palavra:</b>' . $palavra . '</p>';
     $body .= '<b>Termo:</b>' . $termo . '</p>';
     if (!empty($anexo['name'])) {
-        $body .= '<p>Anexo:</p>';
-        $body .= '<img src="' . JPATH_BASE . DS . 'images' . DS . 'acao' .DS . $anexo['name'] . '" />';
+        $body .= '<p>Anexo:</p>' . JPATH_BASE . DS . 'images' . DS . 'acao' .DS . $time . $anexo['name'];
+        $body .= '<img src="' . JPATH_BASE . DS . 'images' . DS . 'acao' .DS . $time . $anexo['name'] . '" />';
     }
 
     $mail = JFactory::getMailer();
     $mail->addRecipient($mailfrom);
+    $mail->addReplyTo(array($mailfrom, $fromname));
     $mail->setSender(array($mailfrom, $fromname));
     $mail->isHtml();
     $mail->setSubject($subject);

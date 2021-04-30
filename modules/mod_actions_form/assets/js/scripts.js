@@ -12,9 +12,15 @@ jQuery(document).ready(function ($) {
     $("#msg-box").slideUp();
   });
 
-  $("#telefone").mask("(00) 0000-00000");
+  $("#termo").change(function () {
+    if (this.checked) {
+      $("#enviar").removeAttr("disabled");
+    } else {
+      $("#enviar").attr('disabled', true); 
+    }
+  });
 
-  $("#form-quotation").on("submit", function (event) {
+  $("#form-actions-form").on("submit", function (event) {
     event.preventDefault();
 
     var formData = new FormData($(this)[0]);
@@ -32,34 +38,33 @@ jQuery(document).ready(function ($) {
       msg.push("Informe a Cota!");
       focus = "cota";
     }
-    if (formData.get("frase").length < 2) {
+    if (
+      formData.get("frase").length < 2 ||
+      formData.get("frase").length > 145
+    ) {
       msg.push("Informe uma frase com até 145 caracteres!");
       focus = "frase";
     }
-    if (formData.get("palavra").length < 2) {
+    if (
+      formData.get("palavra").length < 2 ||
+      formData.get("palavra").length > 45
+    ) {
       msg.push("Informe uma palavra com até 45 caracteres!");
-      focus = "comprimento";
+      focus = "palavra";
     }
     if (
       formData.get("anexo").name &&
       formData.get("anexo").size &&
-      formData.get("anexo").type != "text/csv" &&
-      formData.get("anexo").type != "application/msword" &&
       formData.get("anexo").type != "image/gif" &&
       formData.get("anexo").type != "image/x-icon" &&
       formData.get("anexo").type != "image/jpeg" &&
       formData.get("anexo").type != "image/png" &&
-      formData.get("anexo").type != "application/pdf" &&
-      formData.get("anexo").type != "application/vnd.ms-powerpoint" &&
       formData.get("anexo").type != "image/svg+xml" &&
-      formData.get("anexo").type != "image/webp" &&
-      formData.get("anexo").type != "application/vnd.ms-excel"
+      formData.get("anexo").type != "image/webp"
     ) {
       msg.push("Tipo de arquivo inválido!");
       focus = "anexo";
     }
-    
-    
 
     if (msg.length) {
       msg.reverse();
@@ -69,7 +74,8 @@ jQuery(document).ready(function ($) {
       }
       $("html, body").animate(
         {
-          scrollTop: $("#quotation").offset().top - $("#header").height() - 10,
+          scrollTop:
+            $("#actions-form").offset().top - $("#header").height() - 10,
         },
         300,
         function () {
@@ -91,11 +97,14 @@ jQuery(document).ready(function ($) {
       processData: false,
       contentType: false,
       success: function (data) {
-        $("#msg-box").removeClass("alert-danger").addClass("alert-" + data.class);
+        $("#msg-box")
+          .removeClass("alert-danger")
+          .addClass("alert-" + data.class);
         $("#msg").append(data.msg);
         $("html, body").animate(
           {
-            scrollTop: $("#quotation").offset().top - $("#header").height() - 10,
+            scrollTop:
+              $("#actions-form").offset().top - $("#header").height() - 10,
           },
           300,
           function () {
@@ -107,10 +116,9 @@ jQuery(document).ready(function ($) {
         $(".loading").fadeIn("fast");
       },
       complete: function () {
-        $("#form-quotation")[0].reset();
+        $("#form-actions-form")[0].reset();
         $(".loading").fadeOut("fast");
       },
     });
   });
-
 });

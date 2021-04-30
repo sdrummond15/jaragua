@@ -1,27 +1,26 @@
-#quotation {}
-
-#quotation .quotation {
+#actions-form .actions-form {
     width: 100%;
     display: table;
 }
 
-#quotation .quotation>div {
+#actions-form .actions-form>div {
     width: 1170px;
     margin: auto;
     display: table;
 }
 
-#quotation fieldset {
+#actions-form fieldset {
     width: 100%;
     margin: 0 10px;
     float: left;
 }
 
-#quotation fieldset h3 {
+#actions-form fieldset h3 {
     margin-top: 10px;
 }
 
-#quotation select, #quotation input, #quotation textarea {
+#actions-form [type="text"], #actions-form [type="file"] {
+    width: calc(100% - 20px);
     padding: 5px 10px;
     margin-bottom: 8px;
     border: 0;
@@ -30,10 +29,34 @@
     font-size: 18px;
 }
 
+.metade {
+    width: calc(50% - 5px);
+    float: left;
+}
+
+.left {
+    margin-right: 10px;
+}
+
+#enviar {
+    margin: auto;
+}
+
+input[type=submit]:disabled, button:disabled {
+    opacity: 0.5;
+}
+
+[type="checkbox"] {
+    padding: 5px 10px;
+    margin-bottom: 8px;
+    border: 0;
+    background-color: rgb(105, 18, 18);
+    font-family: 'Libre Franklin', Helvetica, Arial;
+    font-size: 18px;
+}
 
 input#anexo {
     width: calc(100% - 60px);
-    margin-left: 5px;
 }
 
 textarea#embalagem_observacoes {
@@ -119,4 +142,13 @@ div.enviado h1 {
     font-size: 18px;
     text-align: center;
     margin: 40px 0 10px 0;
+}
+
+.termo {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.termo label, #termo {
+    cursor: pointer;
 }
