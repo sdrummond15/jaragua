@@ -156,12 +156,12 @@ div.enviado h1 {
         margin-right: 0;
     }
     #actions-form [type="text"], #actions-form [type="file"] {
-        font-size: 16px;
+        font-size: 12px;
     }
 }
 
 @media screen and (max-width: 480px) {
     #actions-form [type="text"], #actions-form [type="file"] {
-        font-size: 14px;
+        font-size: 10px;
     }
 }

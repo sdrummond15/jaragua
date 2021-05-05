@@ -90,12 +90,47 @@ JHTML::_('behavior.modal');
     <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/lity.min.css" type="text/css" />
     <script type="text/javascript" src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/script.js"></script>
     <script type="text/javascript" src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/lity.min.js"></script>
+    <link rel="stylesheet" href="media/system/css/colorbox.css" type="text/css"/>
+    <script src="media/system/js/jquery.colorbox-min.js" type="text/javascript"></script>
+    <script src="<?php echo $this->baseurl ?>/media/system/js/modal.js" type="text/javascript"></script>
+
 
 </head>
 
 <body>
 
 
+<?php
+        $url = $_SERVER['REQUEST_URI'];
+
+        if (isset($_SESSION["count"])) {
+            $accesses = $_SESSION["count"] + 1;
+        } else {
+            $accesses = 1;
+        }
+
+        $_SESSION["count"] = $accesses;
+
+        $secao = $_SESSION["count"];
+
+           ?>
+            <script type="text/javascript">
+                jQuery(document).ready(function ($) {
+                    setTimeout(function () {
+                        $.fn.colorbox({
+                            href: "novaareadosocio.jpg",
+                            onComplete: function() {
+                                $('.cboxPhoto').click(function() {
+                                    window.location.replace('https://secretariaweb.realclub.net.br/jaragua/login');
+                                })
+                            },
+		 	    open: true,
+			    maxWidth:'95%', 
+			    maxHeight:'95%'
+                        });
+                    }, 1500);
+                }); 
+            </script>
 
     <div id="wrapper">
 
