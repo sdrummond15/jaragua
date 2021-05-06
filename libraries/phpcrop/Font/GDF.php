@@ -21,10 +21,10 @@
     
     * @package WideImage
   **/
-	
-	/**
+	
+	/**
 	 * GDF font support class
-	 * 
+	 * 
 	 * @package WideImage
 	 */
 	class WideImage_Font_GDF

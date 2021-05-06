@@ -65,7 +65,7 @@
 			
 			if (!class_exists($mapperClassName, false))
 			{
-				$mapperFileName = WideImage::path() . 'Mapper/' . $format . '.php';
+				$mapperFileName = WideImage::path() . 'Mapper/' . $format . '.php';
 				if (file_exists($mapperFileName))
 					require_once $mapperFileName;
 			}

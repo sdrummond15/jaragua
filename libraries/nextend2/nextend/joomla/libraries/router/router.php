@@ -1,6 +1,6 @@
-<?php
-
-class N2Router extends N2RouterAbstract
-{
-
+<?php
+
+class N2Router extends N2RouterAbstract
+{
+
 }

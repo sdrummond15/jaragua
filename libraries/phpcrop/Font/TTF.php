@@ -17,16 +17,16 @@
 		
     You should have received a copy of the GNU Lesser General Public License
     along with WideImage; if not, write to the Free Software
-    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
-
-    * @package WideImage
+    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+
+    * @package WideImage
   **/
 	
-	/**
-	 * TTF font support class
+	/**
+	 * TTF font support class
 	 * 
 	 * @package WideImage
-	 */
+	 */
 	class WideImage_Font_TTF
 	{
 		public $face;
@@ -65,7 +65,7 @@
 			$obox['height'] = abs($obox['top']) + abs($obox['bottom']);
 			
 			$x = WideImage_Coordinate::fix($x, $image->getWidth(), $obox['width']);
-			$y = WideImage_Coordinate::fix($y, $image->getHeight(), $obox['height']);
+			$y = WideImage_Coordinate::fix($y, $image->getHeight(), $obox['height']);
 			
 			$fixed_x = $x - $obox['left'];
 			$fixed_y = $y - $obox['top'];

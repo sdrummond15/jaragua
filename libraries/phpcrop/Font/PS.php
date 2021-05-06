@@ -17,16 +17,16 @@
 		
     You should have received a copy of the GNU Lesser General Public License
     along with WideImage; if not, write to the Free Software
-    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
-
-    * @package WideImage
+    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+
+    * @package WideImage
   **/
 	
-	/**
+	/**
 	 * PS font support class
-	 * 
+	 * 
 	 * @package WideImage
-	 */
+	 */
 	class WideImage_Font_PS
 	{
 		public $size;

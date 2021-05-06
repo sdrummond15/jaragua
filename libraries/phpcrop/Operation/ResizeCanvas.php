@@ -17,32 +17,32 @@
 		
     You should have received a copy of the GNU Lesser General Public License
     along with WideImage; if not, write to the Free Software
-    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
-
-    * @package Internal/Operations
+    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+
+    * @package Internal/Operations
   **/
-	
+	
 	/**
 	 * ResizeCanvas operation class
 	 * 
 	 * @package Internal/Operations
 	 */
 	class WideImage_Operation_ResizeCanvas
-	{
-		/**
+	{
+		/**
 		 * Returns an image with a resized canvas
 		 * 
-		 * The image is filled with $color. Use $scale to determine, when to resize.
-		 *
-		 * @param WideImage_Image $img
-		 * @param smart_coordinate $width
-		 * @param smart_coordinate $height
-		 * @param smart_coordinate $left
+		 * The image is filled with $color. Use $scale to determine, when to resize.
+		 *
+		 * @param WideImage_Image $img
+		 * @param smart_coordinate $width
+		 * @param smart_coordinate $height
+		 * @param smart_coordinate $left
 		 * @param smart_coordinate $top
-		 * @param int $color
-		 * @param string $scale 'up', 'down', 'any'
-		 * @param boolean $merge
-		 * @return WideImage_Image
+		 * @param int $color
+		 * @param string $scale 'up', 'down', 'any'
+		 * @param boolean $merge
+		 * @return WideImage_Image
 		 */
 		function execute($img, $width, $height, $left, $top, $color, $scale, $merge)
 		{
