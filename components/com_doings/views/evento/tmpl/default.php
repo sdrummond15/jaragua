@@ -20,15 +20,11 @@ foreach ($this->evento as $evento): ?>
         <h1><?php echo $evento->name; ?></h1>
 
         <?php if ($evento->date_start != '0000-00-00' || $evento->date_end != '0000-00-00'): ?>
-            <h3>
-                <i class="fas fa-calendar-alt"></i> <?= DoingsModelDoings::convDate($evento->date_start, $evento->date_end); ?>
-                <?php if (DoingsModelDoings::convHour($evento->hour_start, $evento->hour_end)): ?>
-                    <span>(<?= DoingsModelDoings::convHour($evento->hour_start, $evento->hour_end); ?>)</span>
-                <?php endif; ?>
-            </h3>
+            
 	    <p><b>Data: </b><?= DoingsModelDoings::convDate($evento->date_start, $evento->date_end); ?></p>
+	<?php if (!empty($evento->local)): ?>
 	    <p><b>Hor&aacute;rio: </b><?= DoingsModelDoings::convHour($evento->hour_start, $evento->hour_end); ?></p>
-
+	<?php endif; ?>
         <?php endif; ?>
 	<?php if (!empty($evento->local)): ?>
             <p><b>Local: </b><?php echo $evento->local; ?></p>

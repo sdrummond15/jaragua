@@ -1,58 +1,58 @@
-<?xml version="1.0" encoding="utf-8"?>
-<extension type="component" version="2.5" method="upgrade">
-	<name>com_jobs</name>
-	<author>Wanderson</author>
-	<creationDate>Setembro 2019</creationDate>
-	<copyright>Todos os Direitos Reservados a SDrummond</copyright>
-	<authorEmail>wandersonmg18@gmail.com</authorEmail>
-	<version>1.0</version>
-	<description>COM_JOBS_XML_DESCRIPTION</description>
-	<install>
-		<sql>
-			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
-		</sql>
-	</install>
-	<uninstall>
-		<sql>
-			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
-		</sql>
-	</uninstall>
-	<files folder="site">
-	  	<filename>controller.php</filename>
-	  	<filename>jobs.php</filename>
-	  	<filename>index.html</filename>
-	  	<filename>views/index.html</filename>
-	  	<filename>views/jobs/index.html</filename>
-	  	<filename>views/jobs/view.html.php</filename>
-	  	<filename>views/jobs/tmpl/default.php</filename>
-	  	<filename>views/jobs/tmpl/index.html</filename>
- 	</files>
-	<languages folder="site">
-		<language tag="pt-BR">language/pt-BR.com_jobs.ini</language>
-	</languages>
-	<administration>
-		<menu img="class:jobs">com_jobs</menu>
-		<submenu>
-			<menu link="option=com_jobs" view="jobs" img="class:jobs" alt="Vagas">com_jobs</menu>
-			<menu link="option=com_categories&amp;extension=com_jobs" view="categories" img="class:jobs-cat" alt="Vagas / Prestadores">com_jobs_categories</menu>
-		</submenu>
-		<files folder="admin">
-			<folder>controllers</folder>
-			<folder>helpers</folder>
-			<folder>models</folder>
-			<folder>language</folder>
-			<folder>sql</folder>
-			<folder>tables</folder>
-			<folder>views</folder>
-			<filename>jobs.php</filename>
-			<filename>access.xml</filename>
-			<filename>config.xml</filename>
-			<filename>controller.php</filename>
-			<filename>index.html</filename>
-		</files>
-		<languages folder="admin">
-			<language tag="pt-BR">language/pt-BR.com_jobs.ini</language>
-			<language tag="pt-BR">language/pt-BR.com_jobs.sys.ini</language>
-		</languages>
-	</administration>
-</extension>
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5" method="upgrade">
+	<name>com_jobs</name>
+	<author>Wanderson</author>
+	<creationDate>Setembro 2019</creationDate>
+	<copyright>Todos os Direitos Reservados a SDrummond</copyright>
+	<authorEmail>wandersonmg18@gmail.com</authorEmail>
+	<version>1.0</version>
+	<description>COM_JOBS_XML_DESCRIPTION</description>
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+	<files folder="site">
+	  	<filename>controller.php</filename>
+	  	<filename>jobs.php</filename>
+	  	<filename>index.html</filename>
+	  	<filename>views/index.html</filename>
+	  	<filename>views/jobs/index.html</filename>
+	  	<filename>views/jobs/view.html.php</filename>
+	  	<filename>views/jobs/tmpl/default.php</filename>
+	  	<filename>views/jobs/tmpl/index.html</filename>
+ 	</files>
+	<languages folder="site">
+		<language tag="pt-BR">language/pt-BR.com_jobs.ini</language>
+	</languages>
+	<administration>
+		<menu img="class:jobs">com_jobs</menu>
+		<submenu>
+			<menu link="option=com_jobs" view="jobs" img="class:jobs" alt="Vagas">com_jobs</menu>
+			<menu link="option=com_categories&amp;extension=com_jobs" view="categories" img="class:jobs-cat" alt="Vagas / Prestadores">com_jobs_categories</menu>
+		</submenu>
+		<files folder="admin">
+			<folder>controllers</folder>
+			<folder>helpers</folder>
+			<folder>models</folder>
+			<folder>language</folder>
+			<folder>sql</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+			<filename>jobs.php</filename>
+			<filename>access.xml</filename>
+			<filename>config.xml</filename>
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+		</files>
+		<languages folder="admin">
+			<language tag="pt-BR">language/pt-BR.com_jobs.ini</language>
+			<language tag="pt-BR">language/pt-BR.com_jobs.sys.ini</language>
+		</languages>
+	</administration>
+</extension>
