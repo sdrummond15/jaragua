@@ -1,18 +1,18 @@
-/*!
-* Fine Uploader
-*
-* Copyright 2013, Widen Enterprises, Inc. info@fineuploader.com
-*
-* Version: 4.4.0
-*
-* Homepage: http://fineuploader.com
-*
-* Repository: git://github.com/Widen/fine-uploader.git
-*
-* Licensed under GNU GPL v3, see LICENSE
-*/ 
-
-
+/*!
+* Fine Uploader
+*
+* Copyright 2013, Widen Enterprises, Inc. info@fineuploader.com
+*
+* Version: 4.4.0
+*
+* Homepage: http://fineuploader.com
+*
+* Repository: git://github.com/Widen/fine-uploader.git
+*
+* Licensed under GNU GPL v3, see LICENSE
+*/ 
+
+
 /*globals window, navigator, document, FormData, File, HTMLInputElement, XMLHttpRequest, Blob, Storage, ActiveXObject */
 /* jshint -W079 */
 var qq = function(element) {
@@ -870,7 +870,7 @@ var qq = function(element) {
         };
     };
 }());
-
+
 /* globals qq */
 /**
  * Fine Uploader top-level Error container.  Inherits from `Error`.
@@ -884,10 +884,10 @@ var qq = function(element) {
 
     qq.Error.prototype = new Error();
 }());
-
+
 /*global qq */
 qq.version="4.4.0";
-
+
 /* globals qq */
 qq.supportedFeatures = (function () {
     "use strict";
@@ -1035,7 +1035,7 @@ qq.supportedFeatures = (function () {
     };
 
 }());
-
+
 /*globals qq*/
 qq.Promise = function() {
     "use strict";
@@ -1116,7 +1116,7 @@ qq.Promise = function() {
         }
     });
 };
-
+
 /* globals qq */
 /**
  * Placeholder for a Blob that will be generated on-demand.
@@ -1136,7 +1136,7 @@ qq.BlobProxy = function(referenceBlob, onCreate) {
         }
     });
 };
-
+
 /*globals qq*/
 
 /**
@@ -1306,7 +1306,7 @@ qq.UploadButton = function(o) {
 };
 
 qq.UploadButton.BUTTON_ID_ATTR_NAME = "qq-button-id";
-
+
 /*globals qq */
 qq.UploadData = function(uploaderProxy) {
     "use strict";
@@ -1478,7 +1478,7 @@ qq.status = {
     DELETING: "deleting",
     DELETED: "deleted"
 };
-
+
 /*globals qq*/
 /**
  * Defines the public API for FineUploaderBasic mode.
@@ -3159,7 +3159,7 @@ qq.status = {
         }
     };
 }());
-
+
 /*globals qq*/
 (function(){
     "use strict";
@@ -3447,7 +3447,7 @@ qq.status = {
     qq.FineUploaderBasic.prototype = qq.basePublicApi;
     qq.extend(qq.FineUploaderBasic.prototype, qq.basePrivateApi);
 }());
-
+
 /*globals qq, XDomainRequest*/
 /** Generic class for sending non-upload ajax requests and handling the associated responses **/
 qq.AjaxRequester = function (o) {
@@ -3830,7 +3830,7 @@ qq.AjaxRequester = function (o) {
         }
     });
 };
-
+
 /*globals qq*/
 /**
  * Base upload handler module.  Delegates to more specific handlers.
@@ -4212,7 +4212,7 @@ qq.UploadHandler = function(o, namespace) {
 
     determineHandlerImpl();
 };
-
+
 /* globals qq */
 /**
  * Common APIs exposed to creators of upload via form/iframe handlers.  This is reused and possibly overridden
@@ -4545,7 +4545,7 @@ qq.AbstractUploadHandlerForm = function(spec) {
         }
     });
 };
-
+
 /* globals qq */
 /**
  * Common API exposed to creators of XHR handlers.  This is reused and possibly overriding in some cases by specific
@@ -4748,7 +4748,7 @@ qq.AbstractUploadHandlerXhr = function(spec) {
         }
     });
 };
-
+
 /*globals qq */
 /*jshint -W117 */
 qq.WindowReceiveMessage = function(o) {
@@ -4785,7 +4785,7 @@ qq.WindowReceiveMessage = function(o) {
         }
     });
 };
-
+
 /*globals qq */
 /**
  * Defines the public API for FineUploader mode.
@@ -5479,7 +5479,7 @@ qq.WindowReceiveMessage = function(o) {
         }
     };
 }());
-
+
 /*globals qq */
 /**
  * This defines FineUploader mode, which is a default UI w/ drag & drop uploading.
@@ -5650,7 +5650,7 @@ qq.extend(qq.FineUploader.prototype, qq.basePrivateApi);
 // Add the FineUploader/default UI public & private UI methods, which may override some base methods.
 qq.extend(qq.FineUploader.prototype, qq.uiPublicApi);
 qq.extend(qq.FineUploader.prototype, qq.uiPrivateApi);
-
+
 /* globals qq */
 /* jshint -W065 */
 /**
@@ -6468,7 +6468,7 @@ qq.Templating = function(spec) {
         }
     });
 };
-
+
 /*globals qq*/
 /**
  * Upload handler used that assumes the current user agent does not have any support for the
@@ -6601,7 +6601,7 @@ qq.UploadHandlerForm = function(options, proxy) {
         }
     });
 };
-
+
 /*globals qq*/
 /**
  * Upload handler used to upload to traditional endpoints.  It depends on File API support, and, therefore,
@@ -7231,7 +7231,7 @@ qq.UploadHandlerXhr = function(spec, proxy) {
         };
     });
 };
-
+
 /*globals qq*/
 qq.PasteSupport = function(o) {
     "use strict";
@@ -7281,7 +7281,7 @@ qq.PasteSupport = function(o) {
         }
     });
 };
-
+
 /*globals qq, document, CustomEvent*/
 qq.DragAndDrop = function(o) {
     "use strict";
@@ -7747,7 +7747,7 @@ qq.UploadDropZone = function(o){
         }
     });
 };
-
+
 /*globals qq, XMLHttpRequest*/
 qq.DeleteFileAjaxRequester = function(o) {
     "use strict";
@@ -7819,7 +7819,7 @@ qq.DeleteFileAjaxRequester = function(o) {
         }
     });
 };
-
+
 /*global qq, define */
 /*jshint strict:false,bitwise:false,nonew:false,asi:true,-W064,-W116,-W089 */
 /**
@@ -8093,7 +8093,7 @@ qq.DeleteFileAjaxRequester = function(o) {
   }
 
 })();
-
+
 /*globals qq, MegaPixImage */
 /**
  * Draws a thumbnail of a Blob/File/URL onto an <img> or <canvas>.
@@ -8399,7 +8399,7 @@ qq.ImageGenerator = function(log) {
     this._testing.determineMimeOfFileName = determineMimeOfFileName;
     /*</testing>*/
 };
-
+
 /*globals qq */
 /**
  * EXIF image data parser.  Currently only parses the Orientation tag value,
@@ -8607,7 +8607,7 @@ qq.Exif = function(fileOrBlob, log) {
     this._testing.parseLittleEndian = parseLittleEndian;
     /*</testing>*/
 };
-
+
 /*globals qq */
 qq.Identify = function(fileOrBlob, log) {
     "use strict";
@@ -8717,7 +8717,7 @@ qq.Identify.prototype.PREVIEWABLE_MIME_TYPES = {
     "image/bmp": "424d",
     "image/tiff": ["49492a00", "4d4d002a"]
 };
-
+
 /*globals qq*/
 /**
  * Attempts to validate an image, wherever possible.
@@ -8852,7 +8852,7 @@ qq.ImageValidation = function(blob, log) {
         return validationEffort;
     };
 };
-
+
 /* globals qq */
 /**
  * Module used to control populating the initial list of files.
@@ -8934,7 +8934,7 @@ qq.Session = function(spec) {
         return refreshEffort;
     };
 };
-
+
 /*globals qq, XMLHttpRequest*/
 /**
  * Thin module used to send GET requests to the server, expecting information about session
@@ -9006,7 +9006,7 @@ qq.SessionAjaxRequester = function(spec) {
         }
     });
 };
-
+
 /* globals qq */
 /**
  * Module that handles support for existing forms.
@@ -9169,7 +9169,7 @@ qq.extend(qq.FormSupport.prototype, {
         return obj;
     }
 });
-
+
 /* globals qq, ExifRestorer */
 /**
  * Controls generation of scaled images based on a reference image encapsulated in a `File` or `Blob`.
@@ -9619,7 +9619,7 @@ qq.extend(qq.Scaler.prototype, {
         }
     }
 });
-
+
 //Based on MinifyJpeg
 //http://elicon.blog57.fc2.com/blog-entry-206.html
 
@@ -9803,7 +9803,7 @@ var ExifRestorer = (function()
     
     return ExifRestorer;
 })();
-
+
 /* globals qq */
 /**
  * Keeps a running tally of total upload progress for a batch of files.
@@ -9919,7 +9919,7 @@ qq.TotalProgress = function(callback, getSize) {
         }
     });
 };
-
+
 /*globals qq */
 // Base handler for UI (FineUploader mode) events.
 // Some more specific handlers inherit from this one.
@@ -9976,7 +9976,7 @@ qq.UiEventHandler = function(s, protectedApi) {
         addHandler(spec.attachTo);
     }
 };
-
+
 /* global qq */
 qq.FileButtonsClickHandler = function(s) {
     "use strict";
@@ -10023,7 +10023,7 @@ qq.FileButtonsClickHandler = function(s) {
 
     qq.extend(this, new qq.UiEventHandler(spec, inheritedInternalApi));
 };
-
+
 /*globals qq */
 // Child of FilenameEditHandler.  Used to detect click events on filename display elements.
 qq.FilenameClickHandler = function(s) {
@@ -10064,7 +10064,7 @@ qq.FilenameClickHandler = function(s) {
 
     qq.extend(this, new qq.FilenameEditHandler(spec, inheritedInternalApi));
 };
-
+
 /*globals qq */
 // Child of FilenameEditHandler.  Used to detect focusin events on file edit input elements.
 qq.FilenameInputFocusInHandler = function(s, inheritedInternalApi) {
@@ -10099,7 +10099,7 @@ qq.FilenameInputFocusInHandler = function(s, inheritedInternalApi) {
     qq.extend(spec, s);
     qq.extend(this, new qq.FilenameEditHandler(spec, inheritedInternalApi));
 };
-
+
 /*globals qq */
 /**
  * Child of FilenameInputFocusInHandler.  Used to detect focus events on file edit input elements.  This child module is only
@@ -10115,7 +10115,7 @@ qq.FilenameInputFocusHandler = function(spec) {
 
     qq.extend(this, new qq.FilenameInputFocusInHandler(spec, {}));
 };
-
+
 /*globals qq */
 // Handles edit-related events on a file item (FineUploader mode).  This is meant to be a parent handler.
 // Children will delegate to this handler when specific edit-related actions are detected.
@@ -10208,5 +10208,5 @@ qq.FilenameEditHandler = function(s, inheritedInternalApi) {
         }
     });
 };
-
-/*! 2014-04-27 */
+
+/*! 2014-04-27 */

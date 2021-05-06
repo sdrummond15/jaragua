@@ -39,7 +39,7 @@
     cm.refresh();
   }
 });
-
+
 // CodeMirror, copyright (c) by Marijn Haverbeke and others
 // Distributed under an MIT license: https://codemirror.net/LICENSE
 
@@ -167,7 +167,7 @@
     return false
   }
 });
-
+
 // CodeMirror, copyright (c) by Marijn Haverbeke and others
 // Distributed under an MIT license: https://codemirror.net/LICENSE
 
@@ -355,7 +355,7 @@
       (pos.ch == 0 || !/\bstring/.test(cm.getTokenTypeAt(pos)))
   }
 });
-
+
 // CodeMirror, copyright (c) by Marijn Haverbeke and others
 // Distributed under an MIT license: https://codemirror.net/LICENSE
 
@@ -531,7 +531,7 @@
     return true;
   }
 });
-
+
 // CodeMirror, copyright (c) by Marijn Haverbeke and others
 // Distributed under an MIT license: https://codemirror.net/LICENSE
 
@@ -677,7 +677,7 @@
     return scanForBracket(this, pos, dir, style, config);
   });
 });
-
+
 // CodeMirror, copyright (c) by Marijn Haverbeke and others
 // Distributed under an MIT license: https://codemirror.net/LICENSE
 
@@ -744,7 +744,7 @@
     }
   };
 });
-
+
 // CodeMirror, copyright (c) by Marijn Haverbeke and others
 // Distributed under an MIT license: https://codemirror.net/LICENSE
 
@@ -850,7 +850,7 @@ CodeMirror.registerHelper("fold", "include", function(cm, start) {
 });
 
 });
-
+
 // CodeMirror, copyright (c) by Marijn Haverbeke and others
 // Distributed under an MIT license: https://codemirror.net/LICENSE
 
@@ -1003,7 +1003,7 @@ CodeMirror.registerHelper("fold", "include", function(cm, start) {
     return getOption(this, options, name);
   });
 });
-
+
 // CodeMirror, copyright (c) by Marijn Haverbeke and others
 // Distributed under an MIT license: https://codemirror.net/LICENSE
 
@@ -1150,7 +1150,7 @@ CodeMirror.registerHelper("fold", "include", function(cm, start) {
       updateFoldInfo(cm, line, line + 1);
   }
 });
-
+
 // CodeMirror, copyright (c) by Marijn Haverbeke and others
 // Distributed under an MIT license: https://codemirror.net/LICENSE
 
@@ -1335,7 +1335,7 @@ CodeMirror.registerHelper("fold", "include", function(cm, start) {
     return findMatchingClose(iter, name);
   };
 });
-
+
 // CodeMirror, copyright (c) by Marijn Haverbeke and others
 // Distributed under an MIT license: https://codemirror.net/LICENSE
 
@@ -1400,7 +1400,7 @@ CodeMirror.registerHelper("fold", "include", function(cm, start) {
       });
   };
 });
-
+
 // CodeMirror, copyright (c) by Marijn Haverbeke and others
 // Distributed under an MIT license: https://codemirror.net/LICENSE
 
@@ -1532,7 +1532,7 @@ CodeMirror.multiplexingMode = function(outer /*, others */) {
 };
 
 });
-
+
 // CodeMirror, copyright (c) by Marijn Haverbeke and others
 // Distributed under an MIT license: https://codemirror.net/LICENSE
 
@@ -1655,7 +1655,7 @@ CodeMirror.multiplexingMode = function(outer /*, others */) {
     this.div.parentNode.removeChild(this.div);
   };
 });
-
+
 // CodeMirror, copyright (c) by Marijn Haverbeke and others
 // Distributed under an MIT license: https://codemirror.net/LICENSE
 
@@ -1808,7 +1808,7 @@ CodeMirror.multiplexingMode = function(outer /*, others */) {
     return new SimpleScrollbars("CodeMirror-overlayscroll", place, scroll);
   };
 });
-
+
 // CodeMirror, copyright (c) by Marijn Haverbeke and others
 // Distributed under an MIT license: https://codemirror.net/LICENSE
 
@@ -1906,7 +1906,7 @@ CodeMirror.multiplexingMode = function(outer /*, others */) {
     this.annotation.clear();
   };
 });
-
+
 // CodeMirror, copyright (c) by Marijn Haverbeke and others
 // Distributed under an MIT license: https://codemirror.net/LICENSE
 
@@ -2072,7 +2072,7 @@ CodeMirror.multiplexingMode = function(outer /*, others */) {
     }};
   }
 });
-
+
 // CodeMirror, copyright (c) by Marijn Haverbeke and others
 // Distributed under an MIT license: https://codemirror.net/LICENSE
 
@@ -2366,7 +2366,7 @@ CodeMirror.multiplexingMode = function(outer /*, others */) {
       this.setSelections(ranges, 0)
   })
 });
-
+
 // CodeMirror, copyright (c) by Marijn Haverbeke and others
 // Distributed under an MIT license: https://codemirror.net/LICENSE
 
@@ -2439,7 +2439,7 @@ CodeMirror.multiplexingMode = function(outer /*, others */) {
     updateActiveLines(cm, sel.ranges);
   }
 });
-
+
 // CodeMirror, copyright (c) by Marijn Haverbeke and others
 // Distributed under an MIT license: https://codemirror.net/LICENSE
 
