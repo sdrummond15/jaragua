@@ -1,43 +1,43 @@
-#modclubs {
-    top: 150px;
-    right: 0;
-    position: fixed;
-    z-index: 9999;
-}
-
-#modclubs .btn-clubs {
-    display: table;
-    text-decoration: none;
-}
-
-#modclubs .btn-clubs img {
-    width: 8vw;
-    min-width: 90px;
-}
-
-#modclubs a.btn-clubs-small {
-    display: none;
-    background-color: #004e78;
-    color: #FFE600;
-    padding: 5px;
-    font-size: 24px;
-    transition: all 300ms;
-}
-
-#modclubs a.btn-clubs-small:hover {
-    background-color: #002c50;
-}
-
-#modclubs a.btn-clubs-small i {
-    transform: rotate(90deg);
-}
-
-@media screen and (max-width: 960px) {
-    #modclubs .btn-clubs {
-        display: none;
-    }
-
-    #modclubs a.btn-clubs-small {
-        display: block;
-    }
+#modclubs {
+    top: 150px;
+    right: 0;
+    position: fixed;
+    z-index: 9999;
+}
+
+#modclubs .btn-clubs {
+    display: table;
+    text-decoration: none;
+}
+
+#modclubs .btn-clubs img {
+    width: 8vw;
+    min-width: 90px;
+}
+
+#modclubs a.btn-clubs-small {
+    display: none;
+    background-color: #004e78;
+    color: #FFE600;
+    padding: 5px;
+    font-size: 24px;
+    transition: all 300ms;
+}
+
+#modclubs a.btn-clubs-small:hover {
+    background-color: #002c50;
+}
+
+#modclubs a.btn-clubs-small i {
+    transform: rotate(90deg);
+}
+
+@media screen and (max-width: 960px) {
+    #modclubs .btn-clubs {
+        display: none;
+    }
+
+    #modclubs a.btn-clubs-small {
+        display: block;
+    }
 }

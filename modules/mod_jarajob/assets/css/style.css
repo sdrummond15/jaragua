@@ -1,43 +1,43 @@
-#modjarajob {
-    top: 280px;
-    right: 0;
-    position: fixed;
-    z-index: 9999;
-}
-
-#modjarajob .btn-clubs {
-    display: table;
-    text-decoration: none;
-}
-
-#modjarajob .btn-clubs img {
-    width: 8vw;
-    min-width: 90px;
-}
-
-#modjarajob a.btn-clubs-small {
-    display: none;
-    background-color: #771c00;
-    color: #FFE600;
-    padding: 5px;
-    font-size: 24px;
-    transition: all 300ms;
-}
-
-#modjarajob a.btn-clubs-small:hover {
-    background-color: #771c00;
-}
-
-#modjarajob a.btn-clubs-small i {
-    transform: rotate(90deg);
-}
-
-@media screen and (max-width: 960px) {
-    #modjarajob .btn-clubs {
-        display: none;
-    }
-
-    #modjarajob a.btn-clubs-small {
-        display: block;
-    }
+#modjarajob {
+    top: 280px;
+    right: 0;
+    position: fixed;
+    z-index: 9999;
+}
+
+#modjarajob .btn-clubs {
+    display: table;
+    text-decoration: none;
+}
+
+#modjarajob .btn-clubs img {
+    width: 8vw;
+    min-width: 90px;
+}
+
+#modjarajob a.btn-clubs-small {
+    display: none;
+    background-color: #771c00;
+    color: #FFE600;
+    padding: 5px;
+    font-size: 24px;
+    transition: all 300ms;
+}
+
+#modjarajob a.btn-clubs-small:hover {
+    background-color: #771c00;
+}
+
+#modjarajob a.btn-clubs-small i {
+    transform: rotate(90deg);
+}
+
+@media screen and (max-width: 960px) {
+    #modjarajob .btn-clubs {
+        display: none;
+    }
+
+    #modjarajob a.btn-clubs-small {
+        display: block;
+    }
 }

@@ -159,15 +159,13 @@ try {
 
     if(!empty($email_admin)){
 
-        $mailfrom = 'marketing@jaraguaclub.com.br';
+        $mailfrom = $app->get('mailfrom');
 
     }else{
 
-        $mailfrom = 'marketing@jaraguaclub.com.br';
+        $mailfrom = $email_form;
 
     }
-
-
 
     $fromname = $app->get('fromname');
 

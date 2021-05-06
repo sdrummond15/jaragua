@@ -1,167 +1,333 @@
 #actions-form .actions-form {
+
     width: 100%;
+
     display: table;
+
 }
+
+
 
 #actions-form fieldset {
+
     width: 100%;
+
     margin: 0;
+
     float: left;
+
 }
+
+
 
 #actions-form fieldset h3 {
+
     margin-top: 10px;
+
 }
+
+
 
 #actions-form [type="text"], #actions-form [type="file"] {
+
     width: calc(100% - 20px);
+
     padding: 5px 10px;
+
     margin-bottom: 8px;
+
     border: 0;
+
     background-color: #eee;
+
     font-family: 'Libre Franklin', Helvetica, Arial;
+
     font-size: 18px;
+
 }
+
+
 
 .metade {
+
     width: calc(50% - 5px);
+
     float: left;
+
 }
+
+
 
 .left {
+
     margin-right: 10px;
+
 }
+
+
 
 #enviar {
+
     margin: auto;
+
 }
+
+
 
 input[type=submit]:disabled, button:disabled {
+
     opacity: 0.3;
+
 }
+
+
 
 [type="checkbox"] {
+
     padding: 5px 10px;
+
     margin-bottom: 8px;
+
     border: 0;
+
     background-color: rgb(105, 18, 18);
+
     font-family: 'Libre Franklin', Helvetica, Arial;
+
     font-size: 18px;
+
 }
+
+
 
 input#anexo {
+
     width: calc(100% - 60px);
+
 }
+
+
 
 textarea#embalagem_observacoes {
+
     height: 174px;
+
 }
+
+
 
 #msg-box {
+
     display: none;
+
 }
+
+
 
 #msg-box .fechar {
+
     position: absolute;
+
     right: 5px;
+
     top: -2px;
+
     cursor: pointer;
+
 }
+
+
 
 .loading {
+
     display: none;
+
     position: fixed;
+
     top: 0;
+
     width: 100%;
+
     background-color: rgba(0, 0, 0, 0.8);
+
     z-index: 99999;
+
     height: 100vh;
+
     left: 0;
+
 }
+
+
 
 .loading i {
+
     color: #FFF;
+
     -webkit-transform: translate(-50%, -50%);
+
     -ms-transform: translate(-50%, -50%);
+
     transform: translate(-50%, -50%);
+
     display: table;
+
     left: 50%;
+
     top: 50%;
+
     transition: linear 100ms;
+
     position: absolute;
+
 }
+
+
 
 .enviado-overlay {
+
     position: fixed;
+
     z-index: 9998;
+
     width: 100%;
+
     height: 100vh;
+
     background-color: rgba(0, 0, 0, 0.8);
+
     top: 0;
+
     left: 0;
+
     right: 0;
+
     bottom: 0;
+
 }
+
+
 
 div.enviado {
+
     -webkit-transform: translate(-50%, -50%);
+
     -ms-transform: translate(-50%, -50%);
+
     transform: translate(-50%, -50%);
+
     background: url("../../../../images/backjunte.jpg") no-repeat;
+
     width: 488px;
+
     height: 296px;
+
     position: absolute;
+
     z-index: 9999;
+
     display: table;
+
     left: 50%;
+
     top: 50%;
+
     transition: linear 100ms;
+
 }
+
+
 
 div.enviado>div.fechar {
+
     padding: 5px;
+
     text-align: right;
+
     display: table;
+
     width: calc(100% - 10px);
+
     line-height: 1;
+
 }
+
+
 
 div.enviado>div.fechar i {
+
     cursor: pointer;
+
 }
+
+
 
 div.enviado h1 {
+
     font-family: 'quicksandbold';
+
     color: #676565;
+
     font-size: 18px;
+
     text-align: center;
+
     margin: 40px 0 10px 0;
+
 }
+
+
 
 .termo {
-    text-align: center;
+
+    text-align: left;
+
     margin: 10px 0;
+
 }
+
+
 
 .termo label, #termo {
+
     cursor: pointer;
+
 }
+
+
 
 @media screen and (max-width: 768px) {
+
     .metade {
+
         width: 100%;
+
         float: none;
+
     }
+
     .left {
+
         margin-right: 0;
+
     }
+
     #actions-form [type="text"], #actions-form [type="file"] {
+
         font-size: 12px;
+
     }
+
 }
 
+
+
 @media screen and (max-width: 480px) {
+
     #actions-form [type="text"], #actions-form [type="file"] {
+
         font-size: 10px;
+
     }
+
 }

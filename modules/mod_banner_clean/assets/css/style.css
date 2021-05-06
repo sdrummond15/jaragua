@@ -1,107 +1,107 @@
-#banner-int {
-    width: 100%;
-    display: table;
-}
-
-#banner-int .banner-int {
-    width: 100%;
-    display: table;
-    margin: auto;
-    position: relative;
-    line-height: 0;
-    height: 150px;
-    background-image: url('../../../../images/banners/bannerint.jpg');
-    background-size: cover;
-    background-position: center;
-}
-
-#banner-int .banner-int .overlay {
-    background-color: rgba(0, 0, 0, 0.8);
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    position: absolute;
-    z-index: 3;
-}
-
-#banner-int .banner-int h1 {
-    color: #FFF;
-    font-size: 36px;
-    text-transform: uppercase;
-    position: absolute;
-    z-index: 4;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    text-shadow: 0px 0px 15px rgba(0, 0, 0, 1);
-    text-align: center;
-    font-weight: 200;
-}
-
-@media screen and (max-width: 1450px) {
-    #banner-int .banner-int {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    #banner-int .banner-int h1 {
-        font-size: 36px;
-        right: 20px;
-        bottom: 0;
-    }
-
-    #banner-int .banner-int .banner3 {
-        height: 300px;
-        width: 55%;
-        margin-left: 0;
-    }
-
-    #banner-int .banner-int .banner3:nth-child(3) {
-        width: 55%;
-        margin-left: -10%;
-    }
-
-    #banner-int .banner-int .banner3:first-child {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    #banner-int .banner-int h1 {
-        font-size: 30px;
-        max-width: 90%;
-        margin: 0 auto 5px auto;
-    }
-
-    #banner-int .banner-int .banner3 {
-        height: 250px;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    #banner-int .banner-int h1 {
-        font-size: 28px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    #banner-int .banner-int .banner3 {
-        height: 180px;
-        width: 100%;
-    }
-
-    #banner-int .banner-int .banner3:nth-child(3) {
-        display: none;
-    }
-
-    #banner-int .banner-int h1 {
-        font-size: 24px;
-    }
-
-    #banner-int .banner-int .banner3 {
-        height: 200px;
-        -webkit-mask-image: none;
-    }
+#banner-int {
+    width: 100%;
+    display: table;
+}
+
+#banner-int .banner-int {
+    width: 100%;
+    display: table;
+    margin: auto;
+    position: relative;
+    line-height: 0;
+    height: 150px;
+    background-image: url('../../../../images/banners/bannerint.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#banner-int .banner-int .overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 3;
+}
+
+#banner-int .banner-int h1 {
+    color: #FFF;
+    font-size: 36px;
+    text-transform: uppercase;
+    position: absolute;
+    z-index: 4;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 1);
+    text-align: center;
+    font-weight: 200;
+}
+
+@media screen and (max-width: 1450px) {
+    #banner-int .banner-int {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #banner-int .banner-int h1 {
+        font-size: 36px;
+        right: 20px;
+        bottom: 0;
+    }
+
+    #banner-int .banner-int .banner3 {
+        height: 300px;
+        width: 55%;
+        margin-left: 0;
+    }
+
+    #banner-int .banner-int .banner3:nth-child(3) {
+        width: 55%;
+        margin-left: -10%;
+    }
+
+    #banner-int .banner-int .banner3:first-child {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #banner-int .banner-int h1 {
+        font-size: 30px;
+        max-width: 90%;
+        margin: 0 auto 5px auto;
+    }
+
+    #banner-int .banner-int .banner3 {
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #banner-int .banner-int h1 {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #banner-int .banner-int .banner3 {
+        height: 180px;
+        width: 100%;
+    }
+
+    #banner-int .banner-int .banner3:nth-child(3) {
+        display: none;
+    }
+
+    #banner-int .banner-int h1 {
+        font-size: 24px;
+    }
+
+    #banner-int .banner-int .banner3 {
+        height: 200px;
+        -webkit-mask-image: none;
+    }
 }

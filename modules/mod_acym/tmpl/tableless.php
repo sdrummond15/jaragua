@@ -1,13 +1,13 @@
-<?php
-/**
- * @package	AcyMailing for Joomla
- * @version	6.0.1
- * @author	acyba.com
- * @copyright	(C) 2009-2018 ACYBA S.A.R.L. All rights reserved.
- * @license	GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
- */
-
-defined('_JEXEC') or die('Restricted access');
+<?php
+/**
+ * @package	AcyMailing for Joomla
+ * @version	6.0.1
+ * @author	acyba.com
+ * @copyright	(C) 2009-2018 ACYBA S.A.R.L. All rights reserved.
+ * @license	GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
+ */
+
+defined('_JEXEC') or die('Restricted access');
 ?><?php
 if (!empty($visibleLists)) {
     echo '<div class="acym_lists">';
@@ -70,4 +70,4 @@ if (!empty($visibleLists)) {
 		<span style="display: none;"></span>
 		<input type="button" class="btn button unsubbutton" value="<?php echo acym_translation($params->get('unsubtext', 'ACYM_UNSUBSCRIBE')); ?>" name="Submit" onclick="try{ return submitAcymForm('unsubscribe','<?php echo $formName; ?>'); }catch(err){alert('The form could not be submitted '+err);return false;}"/>
     <?php } ?>
-</p>
+</p>

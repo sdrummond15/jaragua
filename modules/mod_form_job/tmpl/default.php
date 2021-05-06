@@ -21,11 +21,11 @@
                     <div id="type-works">
                         <div>
                             <input type="radio" id="oferta" class="type-work" name="type-work" value="0" checked/>
-                            <label for="oferta" class="btn-type-work">Oferta de Vaga de Trabalho</label>
+                            <label for="oferta" class="btn-type-work"><span>Oferta de Vaga de Trabalho</span></label>
                         </div>
                         <div>
                             <input type="radio" id="prestador" class="type-work" name="type-work" value="1"/>
-                            <label for="prestador" class="btn-type-work">Oferta de Serviço Autônomo</label>
+                            <label for="prestador" class="btn-type-work"><span>Oferta de Serviço Autônomo</span></label>
                         </div>
                     </div>
 
@@ -43,9 +43,9 @@
 
                     <input name="atividade" id="atividade" type="text" placeholder="Ramo de atividade" required>
 
-                    <input name="phone" id="phone" type="text" placeholder="Telefone / Whatsapp" pattern="\([0-9]{2}\)[\s][0-9]{4}-[0-9]{4,5}" maxlength="15">
+                    <input name="phone" id="phone" type="text" placeholder="Telefone / Whatsapp" pattern="\([0-9]{2}\) [0-9]{4,6}-[0-9]{3,4}$" maxlength="15">
 
-                    <input name="phone2" id="phone2" type="text" placeholder="Telefone (2)" pattern="\([0-9]{2}\)[\s][0-9]{4,5}-[0-9]{4}" maxlength="15">
+                    <input name="phone2" id="phone2" type="text" placeholder="Telefone (2)" pattern="\([0-9]{2}\) [0-9]{4,6}-[0-9]{3,4}$" maxlength="15">
 
                     <input name="email" id="email" type="email" placeholder="E-mail">
 

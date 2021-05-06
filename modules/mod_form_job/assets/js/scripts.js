@@ -36,7 +36,8 @@ jQuery(document).ready(function ($) {
 
     $('#phone').mask(SPMaskBehavior, spOptions);
 
-    $('#phone2').mask("(99) ?9999-9999");
+    $('#phone2').mask(SPMaskBehavior, spOptions);
+;
 
     $('#cota').mask("999-999999");
 
