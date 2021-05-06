@@ -1,0 +1,4 @@
+Array
+(
+    [0] => /home/jaragnew/public_html//logs/general//2021-04-24.log
+)
