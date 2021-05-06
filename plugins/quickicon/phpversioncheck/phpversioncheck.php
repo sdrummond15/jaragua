@@ -142,22 +142,22 @@ class PlgQuickiconPhpVersionCheck extends JPlugin
 		);
 
 		// Check the PHP version's support status using the minor version
-		$activePhpVersion = PHP_MAJOR_VERSION . '.' . PHP_MINOR_VERSION;
+//		$activePhpVersion = PHP_MAJOR_VERSION . '.' . PHP_MINOR_VERSION;
 
 		// Do we have the PHP version's data?
-		if (isset($phpSupportData[$activePhpVersion]))
-		{
+//		if (isset($phpSupportData[$activePhpVersion]))
+//		{
 			// First check if the version has reached end of support
-			$today           = new JDate;
-			$phpEndOfSupport = new JDate($phpSupportData[$activePhpVersion]['eos']);
+//			$today           = new JDate;
+//			$phpEndOfSupport = new JDate($phpSupportData[$activePhpVersion]['eos']);
 
-			if ($phpNotSupported = $today > $phpEndOfSupport)
-			{
+//			if ($phpNotSupported = $today > $phpEndOfSupport)
+//			{
 				/*
 				 * Find the oldest PHP version still supported that is newer than the current version,
 				 * this is our recommendation for users on unsupported platforms
 				 */
-				foreach ($phpSupportData as $version => $versionData)
+/*				foreach ($phpSupportData as $version => $versionData)
 				{
 					$versionEndOfSupport = new JDate($versionData['eos']);
 
@@ -192,7 +192,8 @@ class PlgQuickiconPhpVersionCheck extends JPlugin
 			}
 		}
 
-		return $supportStatus;
+		return $supportStatus; 
+*/
 	}
 
 	/**

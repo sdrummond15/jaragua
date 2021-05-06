@@ -14,7 +14,7 @@ class JFormFieldMootoolsVersion extends FormField
 	public $type = 'Mootoolsversion';
 
 	protected function getLabel() 
-	{		
+	{		
 		return '';
 	}
 
@@ -23,10 +23,10 @@ class JFormFieldMootoolsVersion extends FormField
 		$html = '';
 		
 		$lang = Factory::getLanguage();
-		$lang->load('plg_system_jqueryeasy.sys', JPATH_SITE);
-
-		$html .= '<div class="mootoolsversion alert alert-info" style="margin-bottom: 0">';		
-		$html .= '  <span>'.\JText::_('PLG_SYSTEM_JQUERYEASY_FIELD_MOOTOOLSVERSIONPACKAGED_LABEL').'</span>';		
+		$lang->load('plg_system_jqueryeasy.sys', JPATH_SITE);
+
+		$html .= '<div class="mootoolsversion alert alert-info" style="margin-bottom: 0">';		
+		$html .= '  <span>'.\JText::_('PLG_SYSTEM_JQUERYEASY_FIELD_MOOTOOLSVERSIONPACKAGED_LABEL').'</span>';		
 		$html .= '</div>';
 		
 		Factory::getDocument()->addScriptDeclaration("
@@ -37,8 +37,8 @@ class JFormFieldMootoolsVersion extends FormField
                     }
                 });
 			});
-		");
-		
+		");
+		
 		return $html;
 	}
 

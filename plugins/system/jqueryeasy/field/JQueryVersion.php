@@ -17,7 +17,7 @@ class JFormFieldJQueryVersion extends FormField
 	static $versions = array('4.0' => '3.2.1');
 
 	protected function getLabel() 
-	{		
+	{		
 		return '';
 	}
 
@@ -36,20 +36,20 @@ class JFormFieldJQueryVersion extends FormField
 		if (isset(self::$versions[$joomla_release])) {
 			$version = self::$versions[$joomla_release];
 		}
-		
-// 		$html .= '<script type="text/javascript">';
+		
+// 		$html .= '<script type="text/javascript">';
 // 		$html .= '  jQuery(document).ready(function($) {';
 // 		$html .= '    var version = $.fn.jquery ? $.fn.jquery : "'.$version.'";';		
 // 		$html .= '    if (version != "undefined") { $(".jqueryversion span").replaceWith("'.\JText::_('PLG_SYSTEM_JQUERYEASY_FIELD_JOOMLAISPACKAGEDWITH_LABEL').' <span class=\'label\'>jQuery " + version + "</span>"); }';
-// 		$html .= '  });';
-// 		$html .= '</script>';
-		
-		$html .= '<div class="jqueryversion alert alert-info" style="margin-bottom: 0">';		
+// 		$html .= '  });';
+// 		$html .= '</script>';
+		
+		$html .= '<div class="jqueryversion alert alert-info" style="margin-bottom: 0">';		
 		if ($version == 'undefined') {
 			$html .= '  <span>'.\JText::sprintf('PLG_SYSTEM_JQUERYEASY_FIELD_UNDETERMINEDVERSION_LABEL', 'jQuery').'</span>';
 		} else {
 			$html .= '  <span>'.\JText::sprintf('PLG_SYSTEM_JQUERYEASY_FIELD_JOOMLAISPACKAGEDWITH_LABEL', 'jQuery '.$version).'</span>';
-		}
+		}
 		$html .= '</div>';
 		
 		Factory::getDocument()->addScriptDeclaration("
@@ -60,8 +60,8 @@ class JFormFieldJQueryVersion extends FormField
                     }
                 });
 			});
-		");		
-		
+		");		
+		
 		return $html;
 	}
 

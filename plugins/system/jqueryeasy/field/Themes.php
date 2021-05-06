@@ -13,25 +13,25 @@ class JFormFieldThemes extends FormField
 	public $type = 'Themes';
 
 	protected function getLabel() 
-	{		
+	{		
 		return '';
 	}
 
 	protected function getInput() 
 	{
-		$html = '';
-		
-		// Add the script to the document head.
-		$doc = \JFactory::getDocument();
-		$doc->addStylesheet(\JURI::root(true).'/plugins/system/jqueryeasy/field/themes/css/themes.css');
-		
-		$type = strtolower($this->type);
-		
-		ob_start();
-		require_once dirname(__FILE__).'/'.$type.'/tmpl/default.php';
-		$html .= ob_get_contents();
-		ob_end_clean();
-		
+		$html = '';
+		
+		// Add the script to the document head.
+		$doc = \JFactory::getDocument();
+		$doc->addStylesheet(\JURI::root(true).'/plugins/system/jqueryeasy/field/themes/css/themes.css');
+		
+		$type = strtolower($this->type);
+		
+		ob_start();
+		require_once dirname(__FILE__).'/'.$type.'/tmpl/default.php';
+		$html .= ob_get_contents();
+		ob_end_clean();
+		
 		return $html;		
 	}
 

@@ -14,7 +14,7 @@ class JFormFieldJQueryMobileVersion extends FormField
 	public $type = 'Jquerymobileversion';
 	
 	protected function getLabel() 
-	{		
+	{		
 		return '';
 	}
 
@@ -24,9 +24,9 @@ class JFormFieldJQueryMobileVersion extends FormField
 		
 		$lang = Factory::getLanguage();
 		$lang->load('plg_system_jqueryeasy.sys', JPATH_SITE);
-				
-		$html .= '<div class="jquerymobileversion alert alert-info" style="margin-bottom: 0">';		
-		$html .= '  <span>'.\JText::sprintf('PLG_SYSTEM_JQUERYEASY_FIELD_JOOMLAISNOTPACKAGEDWITH_LABEL', 'jQuery Mobile').'</span>';		
+				
+		$html .= '<div class="jquerymobileversion alert alert-info" style="margin-bottom: 0">';		
+		$html .= '  <span>'.\JText::sprintf('PLG_SYSTEM_JQUERYEASY_FIELD_JOOMLAISNOTPACKAGEDWITH_LABEL', 'jQuery Mobile').'</span>';		
 		$html .= '</div>';
 		
 		Factory::getDocument()->addScriptDeclaration("
@@ -37,8 +37,8 @@ class JFormFieldJQueryMobileVersion extends FormField
                     }
                 });
 			});
-		");
-		
+		");
+		
 		return $html;
 	}
 

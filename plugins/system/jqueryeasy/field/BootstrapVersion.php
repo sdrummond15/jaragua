@@ -16,7 +16,7 @@ class JFormFieldBootstrapVersion extends FormField
 	static $versions = array('4.0' => '4.0.0');
 	
 	protected function getLabel() 
-	{
+	{
 		return '';
 	}
 
@@ -34,19 +34,19 @@ class JFormFieldBootstrapVersion extends FormField
 		
 		if (isset(self::$versions[$joomla_release])) {
 			$version = self::$versions[$joomla_release];
-		}
-		
-// 		$html .= '<script type="text/javascript">';
+		}
+		
+// 		$html .= '<script type="text/javascript">';
 // 		$html .= '  jQuery(document).ready(function($) {';
-// 		$html .= '    var version = $.fn.tooltip.Constructor.VERSION ? $.fn.tooltip.Constructor.VERSION : "2.3.2";';
+// 		$html .= '    var version = $.fn.tooltip.Constructor.VERSION ? $.fn.tooltip.Constructor.VERSION : "2.3.2";';
 // 		$html .= '    if (version != "undefined") { ';
 // 		$html .= '      $(".bootstrapversion span").replaceWith("<span>" + "'.JText::_('PLG_SYSTEM_JQUERYEASY_FIELD_JOOMLAISPACKAGEDWITH_LABEL').' <span class=\'label\'>Bootstrap " + version + "</span>");';
-// 		$html .= '    }';
-// 		$html .= '  });';
-// 		$html .= '</script>';
-		
+// 		$html .= '    }';
+// 		$html .= '  });';
+// 		$html .= '</script>';
+		
 		$html .= '<div class="bootstrapversion alert alert-info" style="margin-bottom: 0">';
-		$html .= '  <span>'.\JText::sprintf('PLG_SYSTEM_JQUERYEASY_FIELD_JOOMLAISPACKAGEDWITH_LABEL', 'Bootstrap '.$version).'</span>';
+		$html .= '  <span>'.\JText::sprintf('PLG_SYSTEM_JQUERYEASY_FIELD_JOOMLAISPACKAGEDWITH_LABEL', 'Bootstrap '.$version).'</span>';
 		$html .= '</div>';
 		
 		Factory::getDocument()->addScriptDeclaration("
@@ -57,8 +57,8 @@ class JFormFieldBootstrapVersion extends FormField
                     }
                 });
 			});
-		");
-		
+		");
+		
 		return $html;
 	}
 
